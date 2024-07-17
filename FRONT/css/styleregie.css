@@ -39,19 +39,6 @@ section::before {
     transform: translateY(100%);
   }
 }
-section span {
-  position: relative;
-  display: block;
-  width: calc(6.25vw - 2px);
-  height: calc(6.25vw - 2px);
-  background: #181818;
-  z-index: 2;
-  transition: 1.5s;
-}
-section span:hover {
-  background: rgb(88, 202, 174);
-  transition: 0s;
-}
 section .signin {
   position: absolute;
   width: 90%;
@@ -89,7 +76,8 @@ section .signin .content .form .inputBox {
   position: relative;
   width: 100%;
 }
-section .signin .content .form .inputBox input {
+section .signin .content .form .inputBox input,
+section .signin .content .form .inputBox select {
   position: relative;
   width: 100%;
   background: #333;
@@ -101,7 +89,8 @@ section .signin .content .form .inputBox input {
   font-weight: 500;
   font-size: 1em;
 }
-section .signin .content .form .inputBox i {
+section .signin .content .form .inputBox i,
+section .signin .content .form .inputBox label {
   position: absolute;
   left: 0;
   padding: 15px 10px;
@@ -111,7 +100,9 @@ section .signin .content .form .inputBox i {
   pointer-events: none;
 }
 .signin .content .form .inputBox input:focus ~ i,
-.signin .content .form .inputBox input:valid ~ i {
+.signin .content .form .inputBox input:valid ~ i,
+.signin .content .form .inputBox select:focus ~ label,
+.signin .content .form .inputBox select:valid ~ label {
   transform: translateY(-7.5px);
   font-size: 0.8em;
   color: #fff;
