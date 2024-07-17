@@ -1,0 +1,20 @@
+.navbar {
+    background-color: #333 !important;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.navbar-brand {
+    color: #fff !important;
+    font-weight: bold;
+    font-size: 1.5rem; /* Ajustar el tamaño de la fuente */
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: #fff !important;
+    font-size: 1.1rem; /* Ajustar el tamaño de la fuente */
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: rgb(88, 202, 174) !important;
+}
