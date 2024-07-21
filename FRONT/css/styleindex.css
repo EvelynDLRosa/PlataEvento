@@ -1,0 +1,54 @@
+body {
+    font-family: "Quicksand", sans-serif;
+    background: #f0f2f5;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    padding: 15px 20px;
+}
+
+.navbar-brand {
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.nav-link {
+    font-size: 1.1em;
+}
+
+.nav-link img {
+    width: 30px;
+    height: 30px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+}
+
+.card {
+    border: none;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.card-header {
+    background: #fff;
+    border-bottom: none;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: 600;
+    padding: 20px;
+}
+
+.card-body {
+    background: #fff;
+    padding: 30px;
+    text-align: center;
+    font-size: 1em;
+    color: #555;
+}
