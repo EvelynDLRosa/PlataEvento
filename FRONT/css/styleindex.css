@@ -1,8 +1,15 @@
-body {
-    font-family: "Quicksand", sans-serif;
-    background: #f0f2f5;
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+}
+
+body {
+    background: #000;
+    color: #fff;
 }
 
 .navbar {
@@ -26,29 +33,104 @@ body {
 .container {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     min-height: 80vh;
+    margin-top: 20px;
 }
 
 .card {
     border: none;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-}
-
-.card-header {
-    background: #fff;
-    border-bottom: none;
-    text-align: center;
-    font-size: 1.2em;
-    font-weight: 600;
-    padding: 20px;
+    background: #222;
+    color: #fff;
+    width: 100%;
 }
 
 .card-body {
-    background: #fff;
-    padding: 30px;
-    text-align: center;
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #2afff8;
+}
+
+.card-text {
     font-size: 1em;
-    color: #555;
+    color: #aaa;
+}
+
+.img-fluid {
+    max-height: 150px;
+    object-fit: cover;
+}
+
+.btn-primary {
+    background: rgb(34, 221, 199);
+    border: none;
+    color: #000;
+    font-weight: 600;
+    font-size: 1.1em;
+}
+
+.btn-primary:hover {
+    background: rgb(48, 228, 183);
+}
+
+.modal-content {
+    border-radius: 10px;
+    background: #181818;
+    color: #fff;
+}
+
+.modal-header {
+    border-bottom: none;
+}
+
+.modal-title {
+    font-size: 1.8em;
+    font-weight: 600;
+    color: #2afff8;
+}
+
+.modal-body {
+    font-size: 1.1em;
+    color: #aaa;
+}
+
+.modal-body img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.btn-outline-danger {
+    border: 1px solid #dc3545;
+    color: #dc3545;
+    font-weight: 600;
+}
+
+.btn-outline-danger:hover {
+    background: #dc3545;
+    color: #fff;
+}
+
+.btn-success {
+    background: #198754;
+    border: none;
+    color: #fff;
+    font-weight: 600;
+}
+
+.btn-info {
+    background: #0dcaf0;
+    border: none;
+    color: #000;
+    font-weight: 600;
+}
+
+.btn-info:hover {
+    background: #31d2f2;
 }
