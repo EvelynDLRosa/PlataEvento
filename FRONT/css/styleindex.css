@@ -34,8 +34,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    min-height: 80vh;
+    min-height: 100vh; /* Incrementar la altura mínima del contenedor */
     margin-top: 20px;
+}
+
+.wider-container {
+    width: 95%; /* Incrementar el ancho del contenedor */
 }
 
 .card {
@@ -63,8 +67,9 @@ body {
 }
 
 .img-fluid {
-    max-height: 150px;
+    max-height: 200px;
     object-fit: cover;
+    width: 100%;
 }
 
 .btn-primary {

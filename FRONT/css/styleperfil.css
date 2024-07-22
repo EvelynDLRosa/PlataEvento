@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+}
+
+body {
+    background: #000;
+    color: #fff;
+}
+
+.navbar {
+    padding: 15px 20px;
+}
+
+.navbar-brand {
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.nav-link {
+    font-size: 1.1em;
+}
+
+.nav-link img {
+    width: 30px;
+    height: 30px;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+.profile-card {
+    border: none;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background: #222;
+    color: #fff;
+}
+
+.profile-image {
+    max-width: 150px;
+    max-height: 150px;
+    object-fit: cover;
+    margin: 20px;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 1.8em;
+    font-weight: 600;
+    color: #2afff8;
+}
+
+.card-text {
+    font-size: 1em;
+    color: #aaa;
+    margin-bottom: 10px;
+}
+
+.btn-primary {
+    background: rgb(34, 221, 199);
+    border: none;
+    color: #000;
+    font-weight: 600;
+    font-size: 1.1em;
+}
+
+.btn-primary:hover {
+    background: rgb(48, 228, 183);
+}
+
+.btn-danger {
+    background: #dc3545;
+    border: none;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.1em;
+}
+
+.btn-danger:hover {
+    background: #c82333;
+}
+
+/* Estilo para la sección de gestión de eventos */
+#event-management {
+    background: #222;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+#event-management h1 {
+    font-size: 2em;
+    font-weight: 600;
+    color: #2afff8;
+}
+
+.table {
+    background-color: #222; /* Fondo oscuro para la tabla */
+    color: #fff; /* Color blanco para el texto */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(34, 221, 199, 0.1); /* Color de fondo para filas impares */
+}
+
+.table thead {
+    background-color: #2afff8; /* Color de fondo para el encabezado */
+    color: #000; /* Color del texto del encabezado */
+}
+
+.table th, .table td {
+    border-top: 1px solid #444; /* Color de la línea divisoria entre filas */
+}
+
+.table th {
+    border-bottom: 2px solid #2afff8; /* Color de la línea divisoria del encabezado */
+}
+
+.btn-info {
+    background: #17a2b8;
+    border: none;
+    color: #fff;
+    font-weight: 600;
+    font-size: 0.9em;
+}
+
+.btn-info:hover {
+    background: #138496;
+}
+
+.table td {
+    background-color: #333; /* Fondo oscuro para celdas */
+}
+
+.table th, .table td {
+    padding: 12px;
+    text-align: center;
+}
+
+.table td {
+    color: #fff; /* Color del texto en las celdas */
+}
