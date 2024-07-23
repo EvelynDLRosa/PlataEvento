@@ -10,25 +10,8 @@
 </head>
 
 <body>
-    <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">MiSitio</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="/login.html">Iniciar Sesión</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"><img src="https://via.placeholder.com/30" alt="Perfil" class="rounded-circle"></a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <!-- Navbar Placeholder -->
+    <div id="navbar-placeholder"></div>
 
     <!-- Main Content -->
     <div class="container mt-5 wider-container">
@@ -127,6 +110,23 @@
             }).catch(err => {
                 console.error('Error al copiar el enlace: ', err);
             });
+        }
+
+        // Simular una variable para el estado de la sesión
+        const isLoggedIn = true;  // Cambia esto a false para probar la vista de invitado
+
+        // Función para cargar el contenido de un archivo HTML
+        async function loadHTML(filePath, elementId) {
+            const response = await fetch(filePath);
+            const content = await response.text();
+            document.getElementById(elementId).innerHTML = content;
+        }
+
+        // Cargar el navbar correcto basado en el estado de la sesión
+        if (isLoggedIn) {
+            loadHTML('navbar_auth.html', 'navbar-placeholder');
+        } else {
+            loadHTML('navbar_guest.html', 'navbar-placeholder');
         }
     </script>
 </body>
